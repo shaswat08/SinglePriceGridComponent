@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: karla Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.card-container{
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 15px 20px 10px rgba(37, 42, 70, 0.1);
+}
+
+.community{
+    padding: 40px;
+}
+
+h2{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 25px;
+}
+
+.community h3{
+    font-weight: 400;
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 15px;
+}
+
+.community p{
+    color: hsl(346, 51%, 82%);
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.sub-card-container{
+    display: flex;
+}
+
+.subscription{
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    color: #ffffff;
+    flex-basis: 55%;
+}
+
+.subscription h3{
+    padding-bottom: 15px;
+}
+
+.price{
+    display: inline-flex;
+}
+
+.price-p{
+    padding: 8px 0 0 12px;
+    opacity: 0.4;
+}
+
+.access-p{
+    padding: 10px 0 20px 0;
+}
+
+button{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: karla, Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.about-us{
+    padding: 40px;
+    background-color: hsl(179, 62%, 63%);
+    opacity: 0.8;
+    color: #ffffff;
+    flex-basis: 50%;
+}
+
+.about-us h3{
+    padding-bottom: 20px;
+}
+
+li{
+    padding-bottom: 8px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+@media(min-width:768px){
+    .about-us, .subscription{
+        width: 50%;
+    }
+}
+
+@media(max-width:768px){
+    .card-container{
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .sub-card-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .community{
+        padding-right: 20px;
+    }
+
+    .about-us, .subscription{
+        width: 100%;
+    }
+
+
+}
